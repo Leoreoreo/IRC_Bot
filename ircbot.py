@@ -5,7 +5,8 @@ import ssl
 # Constants
 HOST = 'chat.ndlug.org'
 PORT = 6697
-NICK = f'ircle-{os.environ["USER"]}'
+# NICK = f'ircle-{os.environ["USER"]}'
+NICK = 'SomeRandomBot'
 
 # Functions
 def send_message(ssl_stream, channel, message):
@@ -34,8 +35,11 @@ def ircle():
         print(message)  # Log incoming messages
 
         # Respond to "!hello" command
-        if "!hello" in message:
+        if message == '!hello':
             send_message(ssl_stream, "#bots", "Hello there.")
+        if message == '!catsay':
+            send_message(ssl_stream, "#bots", "meow")
+
 
 # Main Execution
 def main():
