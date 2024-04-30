@@ -35,9 +35,9 @@ def ircle():
         print(message)  # Log incoming messages
 
         # Respond to "!hello" command
-        if message == '!hello':
+        if '!hello' in message:
             send_message(ssl_stream, "#bots", "Hello there.")
-        if message == '!catsay':
+        elif '!catsay' in message:
             send_message(ssl_stream, "#bots", "meow")
 
 
