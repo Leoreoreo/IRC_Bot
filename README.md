@@ -1,6 +1,6 @@
 # IRC_Bot
 
-This is a simple ITC_Bot (currently inactivated) that can run on chat.ndlug.org server in #bot channel. 
+This is a simple ITC_Bot (currently inactive) that can run on chat.ndlug.org server in #bot channel. 
 
 It can respond to "!hello", "!catsay".
 
